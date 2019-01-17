@@ -62,8 +62,8 @@ Rails.application.configure do
   config.action_mailer.default_options = {from: 'no-reply@example.com'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  :user_name => 'ikeshavgiri',
-  :password => 'Mobiloitte1',
+  :user_name => '',
+  :password => '',
   :domain => 'ikeshavgiri.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,

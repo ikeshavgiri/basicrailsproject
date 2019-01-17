@@ -6,7 +6,7 @@ class Users::SessionsController < ApplicationController
     def create
         @user = User.new(sign_up_params)
         if @user.save!
-        #serMailer.registration(@user).deliver_now
+        #UserMailer.registration(@user).deliver_now
         #gup = Gupshup::Enterprise.new(:userid => 'ikeshavgiri', :password => '10434bebe47a43e6c3c41c572acc1a7a')
         #gup.send_text_message(:msg => 'I love you', :send_to => '919910333034')     
         flash[:success] = "Signup Successfull."    

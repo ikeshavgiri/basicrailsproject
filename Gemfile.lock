@@ -228,13 +228,20 @@ DEPENDENCIES
   chromedriver-helper
   cloudinary
   coffee-rails (~> 4.2)
+<<<<<<< HEAD
   gupshup
+=======
+>>>>>>> a7147f1e0fe62b16b78d3248bc76cbf8671718c9
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mini_magick
   pry
   puma (~> 3.11)
+<<<<<<< HEAD
   rails (~> 5.2.2)
+=======
+  rails (~> 5.2.1, >= 5.2.1.1)
+>>>>>>> a7147f1e0fe62b16b78d3248bc76cbf8671718c9
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -246,7 +253,14 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
+<<<<<<< HEAD
    ruby 2.6.0p0
 
 BUNDLED WITH
    1.17.3
+=======
+   ruby 2.4.1p111
+
+BUNDLED WITH
+   1.17.1
+>>>>>>> a7147f1e0fe62b16b78d3248bc76cbf8671718c9
