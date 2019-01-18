@@ -19,6 +19,30 @@
   </head>
 
   <body>
+    <ion-modal-view>
+   <ion-header>
+       <div class="bar bar-header custom-header">
+           <div class="h1 title">On Call</div>
+       </div>
+   </ion-header>
+   <ion-pane class="custom_ion_video">
+       <div class="noitems" ng-if="calltype == 'audio'">Audio call is running.</div>
+       <div class="video-self" ng-if="calltype == 'video'">
+           <video id="localVideo" style="width: 100%;height: 100%;background-color: #D1C4E9;" class="self"></video>
+       </div>
+
+       <div class="video-block" ng-if="calltype == 'video'">
+           
+           <video  id="main_video" style="width: 100%;height: calc(100vh - 140px);padding-top:0px;background-color: #D1C4E9;" class="other">
+           </video>
+       </div>
+   </ion-pane>
+   <ion-footer>
+       <div class="video-call-btn" ng-click="closeModal()">
+           <span class="video-player"><img src="img/callicon.png"></span>
+       </div>
+   </ion-footer>
+</ion-modal-view>
     <%= yield %>
   </body>
 </html>
